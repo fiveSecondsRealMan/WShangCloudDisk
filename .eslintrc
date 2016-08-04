@@ -1,0 +1,46 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"commonjs": true
+	},
+	"installedESLint": true,
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true,
+			"arrowFunctions": true,
+			"classes": true,
+			"modules": true,
+			"defaultParams":  true
+		},
+		"sourceType": "module"
+	},
+	"parser": "babel-eslint",
+	"plugins": [ "react" ],
+	"rules": {
+		
+		/*
+			设置编码检测规则
+			1 - 警告
+			2 - 错误
+		*/
+
+		"no-empty":	1,		// 空代码块 警告
+		"comma-dangle": 2, // 数组或对象最后一个元素带有逗号 错误
+		"no-unused-vars": 2, // 变量定义未使用 错误
+		"no-const-assign": 2, // 修改了const定义的常量 错误
+		"no-duplicate-case": 2 // switch case重复 错误
+		"no-self-compare": 2, // 比较自身 错误
+		"comma-spacing": [2, { // 作为new调用的function首字母小写
+			"before": false,
+			"after": true
+		}],
+		"constructor-super": 2, // 非派生类调用super 错误,
+		"new-cap": 2,
+		"new-parens": 2, // new function忘记加() 错误
+		"no-array-constructor": 2, // 使用数组构造器 错误
+		"no-cond-assign": 2,// 在条件表达式中使用赋值语句 错误
+	}
+}
