@@ -18,10 +18,13 @@
   },
   "homepage": "https://github.com/fiveSecondsRealMan/WShangCloudDisk#readme",
   "dependencies": {
+    "css-loader": "^0.23.1",
     "electron": "^1.3.2",
+    "html-webpack-plugin": "^2.22.0",
     "react": "^15.3.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
@@ -30,6 +33,8 @@
     "babel-eslint": "^6.1.2",
     "babel-preset-es2015": "^6.9.0",
     "eslint": "^3.2.2",
-    "eslint-plugin-react": "^6.0.0"
+    "eslint-plugin-react": "^6.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
